@@ -1,14 +1,28 @@
+import React, { Component } from 'react'
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+} from "react-router-dom";
+import { NavbarCompontent } from './components';
+import { Home, Sukses } from './pages';
 
-import './App.css';
+export default class App extends Component {
+  render() {
+    return (
+      <BrowserRouter>
+        <NavbarCompontent />
 
-function App() {
-  return (
-    <div className="App">
-      <h3>Test aja ini mah
+        <Routes>
+          <Route exact path={'/'} element={<Home />} />
+          <Route path={'/sukses'} element={<Sukses />} />
+        </Routes>
 
-      </h3>
-    </div>
-  );
+      </BrowserRouter>
+    )
+  }
 }
 
-export default App;
+
+//! Backend
+// json-server --watch db.json --port=3002
