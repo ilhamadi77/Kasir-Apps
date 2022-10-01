@@ -13,7 +13,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 ## API with fake API jsonplaceholder
 
-link json placeholder https://jsonplaceholder.typicode.com/
+link json placeholder https://jsonplaceholder.typicode.com/ </br>
 cd /API/db.json
 <i> json-server --watch db.json --port=3002 </i> </br>
 
